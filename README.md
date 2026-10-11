@@ -1,32 +1,32 @@
-# React + TypeScript + Vite
+# 🛒 買い物リスト
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+買うものを追加して、チェックしたり消したりできる、シンプルな買い物リストです。
 
-Currently, two official plugins are available:
+ https://shopping-list-one-pink.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## なぜこのアプリを作ったか
 
-## React Compiler
+React・TypeScript・Tailwind CSSの基本をしっかり身につけるために作りました。あえてシンプルな題材を選び、追加・チェック・削除・保存という基本の流れを、自分で理解しながら作ることを目標にしました。
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 主な機能
 
-## Expanding the Oxlint configuration
+- 買うものを追加(何も入力しないとエラーを表示)
+- チェックのオン・オフ(チェックしたものは取り消し線を表示)
+- 買うものを削除
+- ブラウザを閉じても内容が残る
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## 使用技術
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+React / TypeScript / Tailwind CSS / Vite / Vercel
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## 工夫した点
+
+- ログイン不要で、開いてすぐ使えるようにした
+- 余計な飾りをなくし、見やすく、使いやすい画面にした
+- 読み上げソフトでも使えるように、入力欄とボタンに名前をつけた
+- 入力し直したら、エラーの文章が消えるようにした
+
+## 今後の改善点
+
+- 動作を確かめるテストを書く
+- カテゴリ分けなど、使いやすくなる機能を足す
